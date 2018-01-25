@@ -42,7 +42,7 @@ end
 
 def add_s(array)
   array.each_with_index.collect do |item, index|
-    item = "#{item}s" if index != 2
+    item = "#{item}s" if index != 1
   end
 end
 
