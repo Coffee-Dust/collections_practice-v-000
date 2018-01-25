@@ -36,6 +36,10 @@ def find_a(array)
 
 end
 
+def sum_array(array)
+  array.inject(0) { |result, item| result + item }
+end
+
 #--------- Support Methods ---------#
 def each_3rd_char_for(string)
   rtn_string = []
