@@ -40,6 +40,12 @@ def sum_array(array)
   array.inject(0) { |result, item| result + item }
 end
 
+def add_s(array)
+  array.each_with_index.collect do |item, index|
+    item = "#{item}s" if index != 2
+  end
+end
+
 #--------- Support Methods ---------#
 def each_3rd_char_for(string)
   rtn_string = []
